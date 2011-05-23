@@ -1,0 +1,69 @@
+=== Native Apps Builder ===
+Tags: apps builder, iphone , ipad , native iOs, android
+Requires at least: 2.4
+Donate link: http://wordpress.apps-builder.com/
+Plugin URI: http://wordpress.apps-builder.com/
+Tested up to: 9.9
+Stable tag: trunk
+Contributors: AppsBuilder srl
+
+
+== Description ==
+
+Welcome to native apps builder plugin. 
+With this plugin you can create the native app version for iPhone, Android and Tables of your wordpress' site.
+
+You have to publish your app in the stores yourself.
+
+Improve connectivity between your site and apps stores !!
+
+For documentation and tips, please refer to the official plugin page for [Native Apps Builder](http://wordpress.apps-builder.com)
+
+
+== Installation ==
+
+Installation is, as usual :
+
+1. Upload files to your `/wp-content/plugins/` directory (preserve sub-directory structure if applicable)
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Refer to the official plugin page for documentation, usage and tips
+
+== Frequently Asked Questions ==
+
+= What is an app? =
+
+Fair question! An App (application) is a software for last generation mobile devices: A newspaper, a game, a virtual store, a restaurant menu, a personal profile… And much more!
+
+= How much does Apps-Builder cost? =
+
+You have two options: One is totally free (100% Free), the other costs you only 15eu/month (Basic option).
+
+= How many apps can I build using Apps-Builder? =
+
+As many as you want!
+
+= What’s the difference between a native app and a web-app? =
+
+A “native app” is developed for a single operating system or platform (iOS, Android). It order to be download and utilized on mobile devices it has to be published on application store. After download and installation, it works offline.
+
+A web-app instead is not “native” to a single platform. Is meant to optimize browsing from any mobile devices. It doesn’t need to be download or installed, as it only works as an online website that gets updates as the user connects the device to Internet.
+
+= How do I publish my applications? =
+
+Using 100% FREE e ADV FREE accounts you publish by yourself you apps. If you go for a “PREMIUM” account we’ll take care of the publication for a set-up fee.
+
+= How long does it take be on the App Store/Marketplace? =
+
+Approximately 10 to 15 days, as long as you app is rated “appropriated”.
+
+== Screenshots ==
+
+Example AppsBuilder plugin.
+
+== Changelog ==
+
+1.0 
+Open Beta Version
+
+
+

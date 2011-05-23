@@ -1,0 +1,23 @@
+h4 {
+	border-bottom: 1px dashed #cccccc;
+	padding-bottom: 5px;
+	padding-top:5px;
+}
+
+#box_left{
+	width:520px;
+	float:left;
+	padding:15px;
+}
+
+#box_right{
+	width:420px;
+	float:right;
+	padding:15px;
+}
+
+#cel{
+	background: url('/wp-content/plugins/Native_Apps_Builder/img/cel.png') no-repeat;
+	width:350px;
+	height:660px;
+}
