@@ -10,15 +10,15 @@ Contributors: AppsBuilder srl
 
 == Description ==
 
-Welcome to native apps builder plugin. 
+Welcome to Native Apps Builder plugin.
 
-It’s the first plugin that enables bloggers and site administrators to convert their contents into native applications (ready to be published on the *Apple Store* and *Market Android*) for Apple(iPhone/iPad), Android and in web-app. The service is free, completely self-service and intuitive.
+It’s the first plugin that enables bloggers and site administrators to convert their contents into native applications (ready to be published on the mobile application stores) for Apple (iPhone/iPad), Android and in web-app. The service is free, completely self-service and intuitive.
 
-Native Apps Builder is a service  designed for Internet users who want to create mobile applications. An innovative technology available to anyone: professionals and amateurs. The platform allows to publish apps on the main stores: Apple, Android and soon Windows
+Native Apps Builder is a service designed for Internet users who want to create mobile applications. An innovative technology available to anyone: professionals and amateurs. The platform allows bloggers to publish apps on the main stores: Apple, Android and soon Windows
 
-Improve connectivity between your site and apps stores !!
+Build a connection between your site and application stores!!
 
-For documentation and tips, please refer to the official plugin page for [Native Apps Builder](http://wordpress.apps-builder.com)
+For further info, documentation and tips, please refer to the official plugin page for [Native Apps Builder](http://wordpress.apps-builder.com)
 
 
 == Installation ==
@@ -61,7 +61,9 @@ Approximately 10 to 15 days, as long as you app is rated “appropriated”.
 
 == Screenshots ==
 
-Example AppsBuilder plugin.
+1. Example AppsBuilder plugin.
+
+2. AppsBuilder Logo.
 
 == Changelog ==
 
