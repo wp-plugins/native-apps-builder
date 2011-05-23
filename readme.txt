@@ -1,5 +1,5 @@
 === Native Apps Builder ===
-Tags: apps builder, iphone , ipad , native iOs, android
+Tags: mobile plugin, iphone , ipad , native iOs, android, tablets version, webapp
 Requires at least: 2.4
 Donate link: http://wordpress.apps-builder.com/
 Plugin URI: http://wordpress.apps-builder.com/
@@ -11,9 +11,10 @@ Contributors: AppsBuilder srl
 == Description ==
 
 Welcome to native apps builder plugin. 
-With this plugin you can create the native app version for iPhone, Android and Tables of your wordpress' site.
 
-You have to publish your app in the stores yourself.
+It’s the first plugin that enables bloggers and site administrators to convert their contents into native applications (ready to be published on the *Apple Store* and *Market Android*) for Apple(iPhone/iPad), Android and in web-app. The service is free, completely self-service and intuitive.
+
+Native Apps Builder is a service  designed for Internet users who want to create mobile applications. An innovative technology available to anyone: professionals and amateurs. The platform allows to publish apps on the main stores: Apple, Android and soon Windows
 
 Improve connectivity between your site and apps stores !!
 
@@ -36,7 +37,8 @@ Fair question! An App (application) is a software for last generation mobile dev
 
 = How much does Apps-Builder cost? =
 
-You have two options: One is totally free (100% Free), the other costs you only 15eu/month (Basic option).
+It is free for users who choose to host an advertising banner run by AppsBuilder. Alternatively it can be adv-free at the cost is of 15 euro a month.
+
 
 = How many apps can I build using Apps-Builder? =
 
@@ -50,7 +52,8 @@ A web-app instead is not “native” to a single platform. Is meant to optimize
 
 = How do I publish my applications? =
 
-Using 100% FREE e ADV FREE accounts you publish by yourself you apps. If you go for a “PREMIUM” account we’ll take care of the publication for a set-up fee.
+Using 100% FREE e ADV FREE accounts you publish by yourself you apps. 
+More info: http://www.apps-builder.com/wiki/en/doku.php?id=docs:publish
 
 = How long does it take be on the App Store/Marketplace? =
 
@@ -64,6 +67,11 @@ Example AppsBuilder plugin.
 
 1.0 
 Open Beta Version
+
+== Support ==
+
+Have you got any question? or feedback?
+You can contact us to info[at]apps-builder.com
 
 
 
