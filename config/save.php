@@ -135,7 +135,7 @@
 		});
 	});
 </script>
-<img src="/wp-content/plugins/Native_Apps_Builder/img/logo.png" />
+<img src="/wp-content/plugins/native-apps-builder/img/logo.png" />
 
 <BR />
 <form method="POST" action="">

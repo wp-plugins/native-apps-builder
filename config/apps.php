@@ -6,7 +6,7 @@
 <?php
 	$ids = get_option("appsbuilder_idapp");
 ?>
-<img src="/wp-content/plugins/Native_Apps_Builder/img/logo.png" />
+<img src="/wp-content/plugins/native-apps-builder/img/logo.png" />
 <div class="metabox-holder">
 	<div class="postbox">
 	<h3>Dashboard</h3>

@@ -172,10 +172,10 @@ function subTree($cats,&$cat){
 				<p>This is optional.</p>
 				<h4>3) upload Icon (PNG, 60x60 px)</h4> 
 				<span>Example<BR /></span>
-				<img src="/wp-content/plugins/Native_Apps_Builder/img/icon.png" width="60">
+				<img src="/wp-content/plugins/native-apps-builder/img/icon.png" width="60">
 				<h4>4) upload Splash (PNG, 640x960 px)</h4>
 				<span>Example<BR /></span>
-				<img src="/wp-content/plugins/Native_Apps_Builder/img/splash.png" width="320">
+				<img src="/wp-content/plugins/native-apps-builder/img/splash.png" width="320">
 				<h4>5) select Categories</h4>
 				<p>Please select the categories that  you want to display in your mobile application. Order is by name-</p>
 				<h4>6) select Pages</h4>

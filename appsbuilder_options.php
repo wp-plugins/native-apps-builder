@@ -17,7 +17,7 @@ if($_POST['appsbuilder_hidden'] == 'Y'){
 	include_once('appsbuilder_getdatadb.php');
 	// admin page   
 	echo '<div class="wrap">';
-	echo '<img src="'.get_bloginfo('wpurl').'/wp-content/plugins/Native_Apps_Builder/img/logo.png" style="border:none;">';
+	echo '<img src="'.get_bloginfo('wpurl').'/wp-content/plugins/native-apps-builder/img/logo.png" style="border:none;">';
 	echo '<h1>Native Apps Builder - Trasform your site into a native app</h1>
 	      <span>by <strong>AppsBuilder srl</strong> - See <a href="http://wordpress.apps-builder.com/">Ufficial Site</a> | <a href="http://www.apps-builder.com/wiki/en/doku.php">FaQs</a> | <a href="">Feature Request & Feedback</a> | <a href="http://www.apps-builder.com/wiki/en/doku.php?id=docs:publish">Publisher Docs</a> | <a href="http://www.apps-builder.com/pag/terms">Terms of Service</a> | <a href="mailto:info@apps-builder.com">Support</a> </span>';
 	echo '<p>Welcome to native apps builder plugin, the easy way for transforms your WordPress blog into an app.<br />With this plugin you can create the <strong>native apps version</strong> of your wordpress\' site and publish it in the <strong>Apple Store</strong> and <strong>Market Android</strong>.<br />Native Apps Builder also gives you your <strong>Webapp</strong> available for all system operative web browser supported.</p>
@@ -38,7 +38,7 @@ if($_POST['appsbuilder_hidden'] == 'Y'){
 		      <p>Click on Preview button after save your config to see the structure of your app. <br />
 		      Remeber, you can login in <a href="http://www.apps-builder.com/auth/">apps-builder.com</a> admin panel for modify graphical layout.</p>';
 		echo '<input style="height:25px;" class="button-primary" type="button" onclick="jQuery(\'#mobile\').dialog();" value="Quick Preview (click)" >';
-		echo '<div id="mobile" style="display:none;width:450px;height:750px;" title="Preview"><img src="'.get_bloginfo('wpurl').'/wp-content/plugins/Native_Apps_Builder/img/cel.png" style="border:none;"></div>';
+		echo '<div id="mobile" style="display:none;width:450px;height:750px;" title="Preview"><img src="'.get_bloginfo('wpurl').'/wp-content/plugins/native-apps-builder/img/cel.png" style="border:none;"></div>';
 	}
 	// ------------ OPEN FORM -------------------
 	echo '<form action="'.$_SERVER['REQUEST_URI'].'" method="post" enctype="multipart/form-data">';
@@ -91,7 +91,7 @@ if($_POST['appsbuilder_hidden'] == 'Y'){
 		  <p>If you don\'t insert any image, default icon will be set.</p>';
 	echo	 '<input type="file" name="app_icon" size="60" placeholder="No image selected">';
 	echo	 '<i>(Icon size 70x70px - Optional)</i><br /><br />';
-	echo     '<strong>Example:</strong> <br /><img src="'.get_bloginfo('wpurl').'/wp-content/plugins/Native_Apps_Builder/img/icon.png" style="border:none;">
+	echo     '<strong>Example:</strong> <br /><img src="'.get_bloginfo('wpurl').'/wp-content/plugins/native-apps-builder/img/icon.png" style="border:none;">
 		 </div>';
 	// ------------------ UPLOAD SPLASH SCREEN -------------------------
 	echo     '<h3>3 - Upload Splash Screen:</h3>
@@ -99,7 +99,7 @@ if($_POST['appsbuilder_hidden'] == 'Y'){
 		  <p>If you don\'t insert any image, default splash will be set.</p>';
 	echo	 '<input type="file" name="splash_image" size="60" placeholder="No image selected">';
 	echo	 '<i>(Image size 320x480px - Optional)</i><br /><br />';
-	echo '   <strong>Example:</strong> <br/><img width="320" src="'.get_bloginfo('wpurl').'/wp-content/plugins/Native_Apps_Builder/img/splash.png" style="border:none;"></div>';	
+	echo '   <strong>Example:</strong> <br/><img width="320" src="'.get_bloginfo('wpurl').'/wp-content/plugins/native-apps-builder/img/splash.png" style="border:none;"></div>';	
 	// ------------ STAMPA LE CATEGORIE ----------------------------
 	echo 	 '<h3 id="categories">4 - Select Category</h3>
 		  <div class="box_appsbuilder">
