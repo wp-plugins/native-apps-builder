@@ -179,16 +179,12 @@
 		}
 
 		private function getCookie(){
-			//$c=tmpfile();
-			$c = tempnam(false, "abc");
-			//$c = sys_get_temp_dir()."/appcookie.txt";
-			if(!$c){
-                                $c = tempnam("/tmp", "abc");
-                        }
-                        if(!$c){
-                                $c = tempnam(sys_get_temp_dir(),abc);
-                        }
-			return $c;
+			$dir=getcwd();
+                   	if(is_writeable($dir)){
+                        	return $dir."/appsbuildercookie.txt";
+	                }else{
+                        	return tempnam("appsbuildercookie","appsbuildercookie");
+			}
 		}
 
 		private function doRequest($url,$params){
