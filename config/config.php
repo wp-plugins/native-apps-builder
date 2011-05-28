@@ -69,16 +69,16 @@ function subTree($cats,&$cat){
 </style>
 
 <script type="text/javascript">
-	window.catsimg=<?= json_encode($catsimg); ?>;
-	window.catschecked=<?= json_encode($catschecked); ?>;
-	window.cats=<?= json_encode($cats); ?>;
-	window.catsfeed=<?= json_encode($catsfeed); ?>;
-	window.catstree=<?= json_encode($tree); ?>;
-	window.images=<?= $images ?>;
-	window.pages=<?= json_encode($mypages); ?>;
-	window.pagesimg=<?= json_encode($pagesimg); ?>;
-	window.pageschecked=<?= json_encode($pageschecked); ?>;
-	window.extrasimg=<?= json_encode($extrasimg); ?>;
+	window.catsimg=<?php echo json_encode($catsimg); ?>;
+	window.catschecked=<?php echo json_encode($catschecked); ?>;
+	window.cats=<?php echo json_encode($cats); ?>;
+	window.catsfeed=<?php echo json_encode($catsfeed); ?>;
+	window.catstree=<?php echo json_encode($tree); ?>;
+	window.images=<?php echo $images ?>;
+	window.pages=<?php echo json_encode($mypages); ?>;
+	window.pagesimg=<?php echo json_encode($pagesimg); ?>;
+	window.pageschecked=<?php echo json_encode($pageschecked); ?>;
+	window.extrasimg=<?php echo json_encode($extrasimg); ?>;
 <?php
 	require_once("config.js");
 ?>
@@ -95,8 +95,8 @@ function subTree($cats,&$cat){
 	<div class="postbox">
 			<h3 class="hndle"><span>General Settings</span></h3>
 		<table class="form-table">
-			<tr><th scope="row">Title : </th><td><input size="44" type="text" name="titolo" value="<?= get_option('appsbuilder_titolo'.$id_app); ?>"/></td></tr>
-			<tr><th scope="row">Description : </th><td><textarea cols="28" rows="5" name="descrizione"><?= get_option('appsbuilder_descrizione'.$id_app); ?></textarea></td></tr>
+			<tr><th scope="row">Title : </th><td><input size="44" type="text" name="titolo" value="<?php echo get_option('appsbuilder_titolo'.$id_app); ?>"/></td></tr>
+			<tr><th scope="row">Description : </th><td><textarea cols="28" rows="5" name="descrizione"><?php echo get_option('appsbuilder_descrizione'.$id_app); ?></textarea></td></tr>
 		</table>
 	</div></div>
 
@@ -141,10 +141,10 @@ function subTree($cats,&$cat){
 					$optu = get_option("appsbuilder_{$k}_url".$id_app);
 			?>
 				<tr>
-					<th scope="row"><?= $v ?></th>
-					<td class="extraimg" data-name="<?= $k ?>"></td>
-					<td><input placeholder="Insert Label" style="width:140px;" type="text" name="<?= $k ?>_label" value="<?= $optl; ?>"></td>
-					<td><input placeholder="Insert Url" style="width:210px;" type="text" name="<?= $k ?>_url" value="<?= $optu; ?>"></td>
+					<th scope="row"><?php echo $v; ?></th>
+					<td class="extraimg" data-name="<?php echo $k; ?>"></td>
+					<td><input placeholder="Insert Label" style="width:140px;" type="text" name="<?php echo $k; ?>_label" value="<?php echo $optl; ?>"></td>
+					<td><input placeholder="Insert Url" style="width:210px;" type="text" name="<?php echo $k; ?>_url" value="<?php echo $optu; ?>"></td>
 				</tr>
 			<?php
 				}
@@ -153,7 +153,7 @@ function subTree($cats,&$cat){
 		</div>
 	</div></div>
 
-	<input type="hidden" name="id_app" value="<?= $id_app ?>"/>
+	<input type="hidden" name="id_app" value="<?php echo $id_app; ?>"/>
 	<input type="hidden" name="tree" />
 	<input type="hidden" name="page" value="saveapp"/>
 	<input type="button" class="button-primary" value="Save and Download Apps" id="save" />
@@ -172,10 +172,10 @@ function subTree($cats,&$cat){
 				<p>This is optional.</p>
 				<h4>3) upload Icon (PNG, 60x60 px)</h4> 
 				<span>Example<BR /></span>
-				<img src="/wp-content/plugins/native-apps-builder/img/icon.png" width="60">
+				<img src="<?php echo get_bloginfo('wpurl');?>/wp-content/plugins/native-apps-builder/img/icon.png" width="60">
 				<h4>4) upload Splash (PNG, 640x960 px)</h4>
 				<span>Example<BR /></span>
-				<img src="/wp-content/plugins/native-apps-builder/img/splash.png" width="320">
+				<img src="<?php echo get_bloginfo('wpurl');?>/wp-content/plugins/native-apps-builder/img/splash.png" width="320">
 				<h4>5) select Categories</h4>
 				<p>Please select the categories that  you want to display in your mobile application. Order is by name-</p>
 				<h4>6) select Pages</h4>

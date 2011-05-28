@@ -17,7 +17,7 @@ h4 {
 }
 
 #cel{
-	background: url('/wp-content/plugins/native-apps-builder/img/cel.png') no-repeat;
+	background: url('<?php echo get_bloginfo("wpurl");?>/wp-content/plugins/native-apps-builder/img/cel.png') no-repeat;
 	width:350px;
 	height:660px;
 }

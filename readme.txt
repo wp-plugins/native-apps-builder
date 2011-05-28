@@ -61,11 +61,7 @@ Approximately 10 to 15 days, as long as you app is rated “appropriated”.
 
 == Screenshots ==
 
-1. Dashboard AppsBuilder plugin.
-
-2. Admin Panel Example
-
-3. Download Native APPS
+1. Example AppsBuilder plugin.
 
 2. AppsBuilder Logo.
 

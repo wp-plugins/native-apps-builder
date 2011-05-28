@@ -110,37 +110,37 @@
 			var el = $(this);
 			var d = el.data("download");
 			if(d){
-			jQuery("#download").attr("action","http://www.apps-builder.com/builder/"+d+"/<?= $id_app ?>");
+			jQuery("#download").attr("action","http://www.apps-builder.com/builder/"+d+"/<?php echo $id_app; ?>");
 				jQuery("#download").submit();
 			}
 		});
 
 
 		jQuery("#advfree").bind("click",function(){
-		jQuery("#download").attr("action","http://www.apps-builder.com/paypal/adv/<?= $id_app ?>");
+		jQuery("#download").attr("action","http://www.apps-builder.com/paypal/adv/<?php echo $id_app; ?>");
 			jQuery("#frame").data("download",false);
 			jQuery("#download").submit();
 		});
 
 		jQuery("#android").bind("click",function(){
-		jQuery("#download").attr("action","http://www.apps-builder.com/builder/createAndroid/<?= $id_app ?>");
+		jQuery("#download").attr("action","http://www.apps-builder.com/builder/createAndroid/<?php echo $id_app; ?>");
 			jQuery("#frame").data("download","getAndroidApp");
 			jQuery("#download").submit();
 		});
 
 		jQuery("#iphone").bind("click",function(){
-		jQuery("#download").attr("action","http://www.apps-builder.com/builder/createIphone/<?= $id_app ?>");
+		jQuery("#download").attr("action","http://www.apps-builder.com/builder/createIphone/<?php echo $id_app; ?>");
 			jQuery("#frame").data("download","getIphoneApp");
 			jQuery("#download").submit();
 		});
 	});
 </script>
-<img src="/wp-content/plugins/native-apps-builder/img/logo.png" />
+<img src="<?php echo get_bloginfo('wpurl');?>/wp-content/plugins/native-apps-builder/img/logo.png" />
 
 <BR />
 <form method="POST" action="">
         <input type="hidden" name="page" value="configapp"/>
-        <input type="hidden" name="id_app" value="<?= $id_app ?>"/>
+        <input type="hidden" name="id_app" value="<?php echo $id_app; ?>"/>
        	<input type="submit" value="Back to Modify Settings" class="button-secondary"/>
 </form>
 	
@@ -149,13 +149,13 @@
 		<h3>Download APPS manager</h3>
 		<div id="box_left">
 			<h4>WebApp:</h4>
-			<img src="<?= $qrcode ?>" /><BR />
-			<span>Direct Link: <input type="text" size="40" value="http://<?= $id_app ?>.apps-builder.com/<?= $id_app ?>" /></span><BR />
-			<span>Download Link: <input type="text" size="40" value="http://apps-builder.com/apps/<?= $id_app ?>_web.png" /></span>
+			<img src="<?php echo $qrcode; ?>" /><BR />
+			<span>Direct Link: <input type="text" size="40" value="http://<?php echo $id_app; ?>.apps-builder.com/<?php echo $id_app; ?>" /></span><BR />
+			<span>Download Link: <input type="text" size="40" value="http://apps-builder.com/apps/<?php echo $id_app; ?>_web.png" /></span>
 			<h4>Android:</h4>
 			<div id="android"><input type="button" class="button-primary" value="Download Android App" /></div>
 			<h4>Iphone/iPad:</h4>
-			<form action="http://www.apps-builder.com/builder/addAppleCertificates/<?= $id_app ?>" method="POST" target="frameapple" enctype="multipart/form-data">
+			<form action="http://www.apps-builder.com/builder/addAppleCertificates/<?php echo $id_app; ?>" method="POST" target="frameapple" enctype="multipart/form-data">
 			<table class="form-table">
 			<p>You can generate certificates into your Apple Developer Account.</p>
 				<tr>
@@ -181,8 +181,8 @@
 			</form>
 			<iframe id="frameapple" name="frameapple" height="50" frameborder="0" marginheight="0"> </iframe>
 			<form action="http://www.apps-builder.com/auth/connect" method="POST" target="frame" style="display:none" id="login">
-				<input type="hidden" name="username" value="<?= $user ?>" />
-				<input type="hidden" name="password" value="<?= $pwd ?>" />
+				<input type="hidden" name="username" value="<?php echo $user; ?>" />
+				<input type="hidden" name="password" value="<?php echo $pwd; ?>" />
 			</form>
 			<form action="" method="POST" target="frame" style="display:none" id="download"></form>
 			<h4>Help</h4>
@@ -195,7 +195,7 @@
 			<div id="advfree"><input type="button" class="button-primary" value="Buy ADV FREE (paypal)" /></div>
 			<iframe id="frame" name="frame" style="display:none"> </iframe>
 			<h4>Preview</h4>
-			<div id="cel"><iframe style="top:93px;left:27px;position:relative;" width="283" height="440" src="http://<?= $id_app ?>.apps-builder.com/<?= $id_app ?>"></iframe></div>
+			<div id="cel"><iframe style="top:93px;left:27px;position:relative;" width="283" height="440" src="http://<?php echo $id_app; ?>.apps-builder.com/<?php echo $id_app; ?>"></iframe></div>
 		</div>
 		<div style="clear:both"></div>
 	</div>

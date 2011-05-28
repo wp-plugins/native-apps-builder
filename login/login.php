@@ -1,4 +1,4 @@
-<img src="/wp-content/plugins/native-apps-builder/img/logo.png" />
+<img src="<?php echo get_bloginfo('wpurl');?>/wp-content/plugins/native-apps-builder/img/logo.png" />
 <style type="text/css">
 <?php
 	require_once("login.css");
