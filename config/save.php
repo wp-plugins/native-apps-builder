@@ -107,6 +107,7 @@
 		});
 
 		jQuery("#frame").bind("load",function(){
+			$.unblockUI();
 			var el = $(this);
 			var d = el.data("download");
 			if(d){
@@ -123,12 +124,14 @@
 		});
 
 		jQuery("#android").bind("click",function(){
+			$.blockUI();
 		jQuery("#download").attr("action","http://www.apps-builder.com/builder/createAndroid/<?php echo $id_app; ?>");
 			jQuery("#frame").data("download","getAndroidApp");
 			jQuery("#download").submit();
 		});
 
 		jQuery("#iphone").bind("click",function(){
+			$.blockUI();
 		jQuery("#download").attr("action","http://www.apps-builder.com/builder/createIphone/<?php echo $id_app; ?>");
 			jQuery("#frame").data("download","getIphoneApp");
 			jQuery("#download").submit();
