@@ -68,11 +68,12 @@ class HTTPSock
         $this->read_socket();
         $this->parse_header();
 
+	/*
         if ($this->headers['Content-Encoding'] == "gzip")
         {
             $this->content = gzinflate(substr($this->content, 10));
         }
-
+	*/
         return $this->content;
     }
 
@@ -177,7 +178,7 @@ class HTTPSock
         $params['User-Agent'] = "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/20061204 Firefox/2.0.0.1";
         $params['Accept'] = "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5";
         $params['Accept-Language'] = "en-us,en;q=0.5";
-        $params['Accept-Encoding'] = "gzip,deflate";
+        //$params['Accept-Encoding'] = "gzip,deflate";
         $params['Accept-Charset'] = "ISO-8859-1,utf-8;q=0.7,*;q=0.7";
         $params['Keep-Alive'] = "300";
         $params['Connection'] = "Close";
@@ -502,7 +503,7 @@ class HTTPSock
 		public function createAndroid($id){
 
 			$this->doRequest("/builder/createAndroid/$id",array());
-			return $this->doRequest("/builder/getAndroidApp/$id","");
+			return $this->doRequest("/builder/getAndroidApp/$id",array());
 
 		}
 
