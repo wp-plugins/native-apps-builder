@@ -34,7 +34,15 @@
                 update_option("appsbuilder_{$k}_image".$id_app,$_POST[$k."img"]);
         }
 
+
 	$tree = json_decode(base64_decode($_POST['tree']));
+	if(!is_array($tree)){
+		$tree=json_decode($tree);
+	}
+	if(!is_array($tree)){
+		echo "DATA ERROR";
+		exit;
+	}
 
 	foreach($pageschecked AS $pageid){
 		$page = get_page($pageid);

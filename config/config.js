@@ -15,12 +15,14 @@ jQuery(document).ready(function(){
 	var html = [];
 	for(var i in window.pages){
 		var p = window.pages[i];
+		if($.type(p) != "object") continue;
 		html.push("<li><span>");
 		html.push("<div class='selectimg'>",getImages("page",p.ID),"</div> <input class='pagCheck' type='checkbox' name='pages[]' value='",p.ID,"' />");
 		html.push(p.post_title,"</span></li>");
 	}
 	jQuery("#apppage").html(html.join(""));
 
+	
 	restoreSelection(jQuery("#apptree"),"cats");
 	restoreSelection(jQuery("#apppage"),"pages");
 
@@ -51,6 +53,7 @@ function restoreSelection(place,type){
 	var c = window[type+"checked"];
 	for(var i in c){
 		var id = c[i];
+		if($.type(id) != "string") continue;
 		inputs.filter("[value="+id+"]").prop("checked",true);
 	}
 
@@ -60,6 +63,7 @@ function restoreSelection(place,type){
 	var im = window[type+"img"];
 	for(var i in im){
 		//console.log(i);
+		if($.type(im[i]) != "string") continue;
 		var sel = inputs.filter("[name="+i+"]");
 		if(sel.length > 0){
 			sel.val(im[i]);
@@ -82,6 +86,7 @@ function restoreSelection(place,type){
 
 function createTree(place,cat){
         for(var i in cat){
+		if(isNaN(i)) continue;
                 var html = [];
                 html.push("<li nome='",window.cats[i]['name'],"' ");
 		html.push("link='",window.catsfeed[i],"' ");
@@ -121,18 +126,20 @@ function getImages(type,id){
 	var html = ["<select name='",type,"img",id,"'>"];
 
 	for(var i in window.images){
-		img = window.images[i];
+		var img = window.images[i];
+		if($.type(img) != "string") continue;
 		var imgname = img.split("/");
 		imgname = imgname[imgname.length-1].split(".");
 		imgname = imgname[0];
 		//html.push("<option style='background-image:url(http://www.apps-builder.com",img,");");
 		//html.push("width:50px;height:50px' ");
 		//html.push("<option ");
-		html.push("<option title='http://www.apps-builder.com",img,"'  ");
+		html.push("<option title='http://www.apps-builder.com/",img,"'  ");
 		html.push(" value='",img,"'>",imgname,"</option>");
 	}
 	html.push("</select>");
 	return html.join("");
 
 }
+
 
