@@ -97,7 +97,13 @@
 	$icon = $_FILES['app_icon']['tmp_name'];
 	$splash = $_FILES['splash_image']['tmp_name'];
 
-	$appsbuilder->setAppInfos($id_app,$titolo,$desc,$icon,$splash);
+
+	$inf = array(
+		"titolo" => $titolo,
+		"descrizione" => $desc
+	);
+
+	$appsbuilder->setAppInfos($id_app,$inf,$icon,$splash);
 
 
 	$qrcode=$appsbuilder->createQRCode($id_app);
