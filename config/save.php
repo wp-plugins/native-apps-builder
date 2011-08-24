@@ -104,6 +104,7 @@
 	);
 
 	$appsbuilder->setAppInfos($id_app,$inf,$icon,$splash);
+	$appsbuilder->setTemplate($id_app,$_POST['template']);
 
 
 	$qrcode=$appsbuilder->createQRCode($id_app);
@@ -164,7 +165,16 @@
 <div class="metabox-holder">
 	<div class="postbox">
 		<h3>Download APPS manager</h3>
+		
 		<div id="box_left">
+			<h4>Graphics:</h4>
+			<p>If you want customize your app layout click on button below: </p>
+		<form method="POST" action="">	
+			<input type="hidden" name="page" value="graphics"/>
+    	    <input type="hidden" name="id_app" value="<?php echo $id_app; ?>"/>
+			<input type="submit" class="button-primary" value="Customize Layout and Graphics" id="save" />
+		</form>
+		
 			<h4>WebApp:</h4>
 			<img src="<?php echo $qrcode; ?>" /><BR />
 			<span>Direct Link: <input type="text" size="40" value="http://<?php echo $id_app; ?>.apps-builder.com/<?php echo $id_app; ?>" /></span><BR />
@@ -207,8 +217,8 @@
 			<br />
 		</div>
 		<div id="box_right">
-			<h4>ADV FREE:</h4>
-			<p>If you want to remove adv banner on you app, you can purchase "adv free" for 190€/year.</p>
+			<h4>ADVANCED:</h4>
+			<p>If you want to remove adv banner on you app, you can purchase "advanced" for 180€/year.</p>
 			<div id="advfree"><input type="button" class="button-primary" value="Buy ADV FREE (paypal)" /></div>
 			<iframe id="frame" name="frame" style="display:none"> </iframe>
 			<h4>Preview</h4>

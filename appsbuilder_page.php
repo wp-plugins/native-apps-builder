@@ -70,6 +70,9 @@
 			case "saveapp":
 				include_once("config/save.php");
 				break;
+			case "graphics":
+				include_once("config/graphics.php");
+				break;
 			default:
 				include_once("config/apps.php");
 				break;

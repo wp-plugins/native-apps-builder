@@ -1,4 +1,25 @@
+<script type="text/javascript">
+
+function chooseImg(id, img, name)
+{
+	$('#img_'+name+'_'+id).parent().find('img').css('opacity', '0.7');
+	
+	$('#img_'+name+'_'+id).parent().find('img').css('border', '');
+
+	$('#img_'+name+'_'+id).css('opacity', '1');	
+	$('#img_'+name+'_'+id).css('border', '1px solid gray');	
+	$('#img_'+name+'_'+id).attr('onmouseout', '');	
+	
+	$('#img_'+name+'_'+id).parent().find('input').val(''+img);
+}
+
+</script>
+
+
 <?php
+
+include_once('graphics_function.php');
+
 function subTree($cats,&$cat){
 	foreach($cat as $key => &$value){
 		foreach($cats as $category){
@@ -98,6 +119,30 @@ function subTree($cats,&$cat){
 			<tr><th scope="row">Title : </th><td><input size="44" type="text" name="titolo" value="<?php echo get_option('appsbuilder_titolo'.$id_app); ?>"/></td></tr>
 			<tr><th scope="row">Description : </th><td><textarea cols="28" rows="5" name="descrizione"><?php echo get_option('appsbuilder_descrizione'.$id_app); ?></textarea></td></tr>
 		</table>
+		
+		<div style="padding-left:8px;">
+		
+		<!--<h5>Layout</h5>
+		<select name="layout">
+		<option value="list" <? if(isset($layout) && 'list' == $layout['layout']) echo 'selected = "selected"'; ?> >List</option>
+		<option value="grid" <? if(isset($layout) && 'grid' == $layout['layout']) echo 'selected = "selected"'; ?> >Grid</option>
+		</select>
+		-->
+		<h5>Template</h5>
+		<p>Choose the style for the app. You can customize it in the Graphics section on the next page.<br>
+			</p><br>
+		<? 
+			$datatpl = array();
+			$datatpl['imgs'] = $appsbuilder->getTemplates();
+			$datatpl['name'] = 'template';	
+			$datatpl['value'] =  (isset($layout))? $layout['template'] : "";
+		
+		?>
+		<div id="imglist_template">
+		<?	echo image_slideshow($datatpl); ?>
+		</div>
+		</div>
+
 	</div></div>
 
 	<div class="metabox-holder">
@@ -156,7 +201,7 @@ function subTree($cats,&$cat){
 	<input type="hidden" name="id_app" value="<?php echo $id_app; ?>"/>
 	<input type="hidden" name="tree" />
 	<input type="hidden" name="page" value="saveapp"/>
-	<input type="button" class="button-primary" value="Save and Download Apps" id="save" />
+	<input type="button" class="button-primary" value="Save and Continue" id="save" />
 </form>
 <BR />
 <BR />
