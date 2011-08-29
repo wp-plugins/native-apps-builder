@@ -70,15 +70,6 @@ Approximately 10 to 15 days, as long as you app is rated “appropriated”.
 1.0 
 Open Beta Version
 
-2.0
-
-* Template 
-* Layout Manager
-* New WebApp
-* New Android .apk
-* New iPad Version
-* Bug Fixed
-
 == Support ==
 
 Have you got any question? or feedback?
