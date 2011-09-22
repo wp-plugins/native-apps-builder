@@ -53,7 +53,7 @@ function upload_img($data, $appsbuilder)
 	 */
 
 	$html .= "<p>Or upload an image: <small>(images saved in \"uploads\")</small></p>";
-	$html .= '<input class="upload_image_button" name="'.$data['where'].'" type="button" value="Upload Image" />';
+	$html .= '<input class="appsbuilder_upload_image_button" name="'.$data['where'].'" type="button" value="Upload Image" />';
 	
 	return $html;
 }	

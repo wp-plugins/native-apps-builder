@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
 
 	var isplugin = false;
 	
-	jQuery('.upload_image_button').click(function() {
+	jQuery('.appsbuilder_upload_image_button').click(function() {
 	 formfield = jQuery(this).attr('name');
 	 isplugin = true;
 	 tb_show('', 'media-upload.php?type=image&amp;TB_iframe=true');
