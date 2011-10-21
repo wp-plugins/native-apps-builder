@@ -1,12 +1,12 @@
-<?php  
-    /* 
-    Plugin Name: Native Apps Builder 
-    Plugin URI: http://www.apps-builder.com/ 
-    Description: With Native Apps Builder Plugin you can create 100% <strong>NATIVE app version</strong> of your wordpress'site. Available native apps for iPhone iPad Android and Tablets. In 6 easy steps you'll able to download native apps and submitting them in the <strong>Apple Store</strong> and <strong>Market Android</strong>. Native apps builder now support webapp and native apps.
-    Author: Apps Builder srl 
-    Version: 2.1 Beta 
-    Author URI: http://www.apps-builder.com 
-    */  
+<?php
+/*
+Plugin Name: Native Apps Builder
+Plugin URI: http://www.apps-builder.com/
+Description: With Native Apps Builder Plugin you can create 100% <strong>NATIVE app version</strong> of your wordpress'site. Available native apps for iPhone iPad Android and Tablets. In 6 easy steps you'll able to download native apps and submitting them in the <strong>Apple Store</strong> and <strong>Market Android</strong>. Native apps builder now support webapp and native apps.
+Author: Apps Builder srl
+Version: 2.1 Beta
+Author URI: http://www.apps-builder.com
+*/
 add_action('admin_menu', 'my_plugin_menu');
 function my_plugin_menu() {
 	add_options_page('Native-Apps-Builder', 'Native-Apps-Builder', 1, 'NativeAppsBuilder', 'appsbuilderoptions');
@@ -14,8 +14,6 @@ function my_plugin_menu() {
 function appsbuilderoptions() {
 	include('appsbuilder_page.php');
 }
-
-
 
 add_action('wp_ajax_change_imgset', 'change_imgset');
 add_action('wp_ajax_save_app', 'save_app');
@@ -179,13 +177,6 @@ function change_imgset(type, style, name, dest)
 </script>
 <?php
 }
- 
-
-?>
-
-
-
-<?
 
 function analyse_attachment($attachment_ID)
 {          
@@ -211,6 +202,4 @@ wp_enqueue_style('thickbox');
 
 add_action('admin_print_scripts', 'my_admin_scripts');
 add_action('admin_print_styles', 'my_admin_styles');
-
-
 ?>
