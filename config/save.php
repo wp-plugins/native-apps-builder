@@ -221,7 +221,7 @@
 			<div id="advfree"><input type="button" class="button-primary" value="Buy ADV FREE (paypal)" /></div>
 			<iframe id="frame" name="frame" style="display:none"> </iframe>
 			<h4>Preview</h4>
-			<div id="cel"><iframe style="top:93px;left:27px;position:relative;" width="283" height="440" src="http://<?php echo $id_app; ?>.apps-builder.com/<?php echo $id_app; ?>"></iframe></div>
+			<div id="cel"><iframe style="top:93px;left:27px;position:relative;" width="283" height="440" src="http://www.apps-builder.com/app/beta/<?php echo $id_app; ?>"></iframe></div>
 		</div>
 		<div style="clear:both"></div>
 	</div>
