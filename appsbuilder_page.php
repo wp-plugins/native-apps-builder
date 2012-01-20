@@ -48,6 +48,7 @@
 
 				if(!is_numeric($id_app)){
 					echo "Error Creating App<br/>";
+					print_r($id_app); 
 					include_once("config/apps.php");
 					break;
 				}
