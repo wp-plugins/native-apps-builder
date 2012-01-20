@@ -7,8 +7,8 @@ Author: Apps Builder srl
 Version: 2.1 Beta
 Author URI: http://www.apps-builder.com
 */
-add_action('admin_menu', 'my_plugin_menu');
-function my_plugin_menu() {
+add_action('admin_menu', 'my_plugin_menu_apps');
+function my_plugin_menu_apps() {
 	add_options_page('Native-Apps-Builder', 'Native-Apps-Builder', 1, 'NativeAppsBuilder', 'appsbuilderoptions');
 }
 function appsbuilderoptions() {
